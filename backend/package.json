@@ -1,0 +1,26 @@
+{
+    "name": "streaming-chat",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "dev": "tsx watch index.ts",
+        "build": "tsc index.ts --outDir dist",
+        "start": "NODE_ENV=production node dist/index.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "packageManager": "pnpm@10.20.0",
+    "dependencies": {
+        "@ai-sdk/google": "^2.0.43",
+        "@elysiajs/node": "^1.4.2",
+        "@types/node": "^24.10.1",
+        "ai": "^5.0.101",
+        "dotenv": "^17.2.3",
+        "elysia": "^1.4.16",
+        "tsx": "^4.20.6",
+        "typescript": "^5.9.3",
+        "zod": "^4.1.13"
+    }
+}
