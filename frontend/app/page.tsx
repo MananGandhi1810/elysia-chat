@@ -71,7 +71,7 @@ export default function Chat() {
     return (
         <div className="bg-black text-white h-screen flex flex-col items-center pb-4 font-mono">
             <div className="w-full max-w-2xl flex flex-col h-full">
-                <div className="text-center py-4 border-b border-white mb-4">
+                <div className="text-center py-4 border-b border-white">
                     <h1 className="text-xl font-semibold tracking-tight">AI Chat</h1>
                 </div>
 
