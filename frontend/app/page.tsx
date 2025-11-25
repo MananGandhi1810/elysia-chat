@@ -80,7 +80,7 @@ export default function Chat() {
                             <p>Start a conversation...</p>
                         </div>
                     )}
-                <ScrollArea className="flex-1 overflow-y-hidden px-8">
+                <ScrollArea className="flex-1 overflow-y-hidden px-8 py">
                     {messages.map((msg, index) => (
                         <div
                             key={index}

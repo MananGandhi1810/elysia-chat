@@ -17,6 +17,12 @@ const app = new Elysia({ adapter: node() })
         enabled: env.NODE_ENV !== 'production',
         path: '/openapi',
     }))
+    .onError(({ code, status, set }) => {
+        if (code === 'NOT_FOUND') {
+            set.status = 404;
+            return { error: "Not Found" };
+        }
+    })
     .get("/", () => "Hello, World!")
     .get("/health", () => ({ status: "ok" }))
     .post(
