@@ -12,6 +12,7 @@ const chat = (
     return streamText({
         model: model("gemini-2.5-flash"),
         messages,
+        system: "You are a helpful assistant. Do not use markdown formatting.",
     });
 };
 

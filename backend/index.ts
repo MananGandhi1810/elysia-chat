@@ -9,8 +9,9 @@ const PORT = env.PORT;
 const app = new Elysia({ adapter: node() })
     .use(cors({
         origin: "http://localhost:3001",
+        
     }))
-    .get("/", () => "Hello, Elysia!")
+    .get("/", () => "Hello, World!")
     .get("/health", () => ({ status: "ok" }))
     .post(
         "/chat",
