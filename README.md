@@ -1,6 +1,6 @@
 # AI Chat
 
-A chat application built with Elysia, Next.js, and Google Gemini. This project explores Elysia framework fundamentals and streaming AI responses.
+An AI chat application built with Elysia, Next.js, and Google Gemini. This project explores Elysia framework fundamentals and streaming AI responses.
 
 ## Screenshot
 
