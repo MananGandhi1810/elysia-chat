@@ -3,13 +3,19 @@ import { node } from "@elysiajs/node";
 import { cors } from "@elysiajs/cors";
 import env from "./env";
 import { chat } from "./ai";
+import { openapi } from '@elysiajs/openapi'
 
 const PORT = env.PORT;
 
 const app = new Elysia({ adapter: node() })
-    .use(cors({
-        origin: "http://localhost:3001",
-        
+    .use(
+        cors({
+            origin: "http://localhost:3001",
+        })
+    )
+    .use(openapi({
+        enabled: env.NODE_ENV !== 'production',
+        path: '/openapi',
     }))
     .get("/", () => "Hello, World!")
     .get("/health", () => ({ status: "ok" }))

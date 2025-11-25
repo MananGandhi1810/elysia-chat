@@ -16,6 +16,7 @@
         "@ai-sdk/google": "^2.0.43",
         "@elysiajs/cors": "^1.4.0",
         "@elysiajs/node": "^1.4.2",
+        "@elysiajs/openapi": "^1.4.11",
         "@types/node": "^24.10.1",
         "ai": "^5.0.101",
         "dotenv": "^17.2.3",
