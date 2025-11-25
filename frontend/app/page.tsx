@@ -2,7 +2,6 @@
 
 import { Send } from "lucide-react";
 import { Button } from "../components/ui/button";
-import { Input } from "../components/ui/input";
 import { useState } from "react";
 import { Textarea } from "@/components/ui/textarea";
 
@@ -72,7 +71,7 @@ export default function Chat() {
         <div className="bg-black text-white h-screen flex flex-col items-center p-6">
             <div className="w-full max-w-2xl flex flex-col h-full">
                 <div className="text-center py-4 border-b border-gray-800 mb-4">
-                    <h1 className="text-xl font-semibold tracking-tight">Gemini 2.5 Flash</h1>
+                    <h1 className="text-xl font-semibold tracking-tight">AI Chat</h1>
                 </div>
 
                 <div className="flex-1 overflow-y-auto space-y-4 px-2 pb-4 scrollbar-thin scrollbar-thumb-gray-700">
