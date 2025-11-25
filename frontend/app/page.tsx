@@ -93,7 +93,7 @@ export default function Chat() {
                                         : "bg-black text-white border-white"
                                 }`}
                             >
-                                <p className="text-sm leading-relaxed whitespace-pre-wrap">{msg.content}</p>
+                            <p className="text-sm leading-relaxed whitespace-pre-wrap">{msg.content}</p>
                             </div>
                         </div>
                     ))}
