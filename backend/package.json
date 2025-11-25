@@ -14,6 +14,7 @@
     "packageManager": "pnpm@10.20.0",
     "dependencies": {
         "@ai-sdk/google": "^2.0.43",
+        "@elysiajs/cors": "^1.4.0",
         "@elysiajs/node": "^1.4.2",
         "@types/node": "^24.10.1",
         "ai": "^5.0.101",

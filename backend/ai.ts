@@ -4,12 +4,14 @@ import env from "./env";
 
 const model = createGoogleGenerativeAI({
     apiKey: env.GOOGLE_API_KEY || "",
-})
+});
 
-const chat = (message: string) => {
+const chat = (
+    messages: { role: "user" | "assistant"; content: string }[] = []
+) => {
     return streamText({
         model: model("gemini-2.5-flash"),
-        messages: [{ role: "user", content: message }],
+        messages,
     });
 };
 
