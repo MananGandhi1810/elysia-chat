@@ -104,7 +104,7 @@ export default function Chat() {
                             </h1>
                         </div>
                         <div className="text-xs text-zinc-500 font-mono">
-                            Gemini 2.0 Flash
+                            Gemini 2.5 Flash
                         </div>
                     </div>
                 </header>
